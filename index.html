@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sen lecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+            <nav class="nav">
+                
+                <ul>
+                    <img src="image-sasset/image-asset.jpeg" alt="icone-logo">
+                    <li><button>Accueil</button></li>
+                    <li><button>A propos</button></li>
+                    <li><button>Contact</button></li>
+                    
+                </ul>
+            </nav>
+       
+    </header>
+    <img src="image-sasset/image-asset.jpeg" alt="" class="back">
+    <div>
+        <h1 class="titre">Meditez le monde litteraire</h1>
+        <div class="citation">
+            <h1>CHEIKH ANTA DIOP</h1>
+            <img src="image-sasset/cheikh anta diop og.jpeg" alt="cheikh ANta diop">
+            <p class="citations">
+                « Formez-vous, armez-vous de sciences jusqu'aux dents (…) et arrachez votre patrimoine culturel..... »
+            </p>
+        </div>
+        <p class="description">
+            Plongez dans un monde où les mots deviennent des portails vers l'imagination, la connaissance et la réflexion. "Méditez la littérature" est bien plus qu'un simple site web ; c'est un sanctuaire pour les esprits avides de découvertes, un havre pour les âmes en quête d'inspiration, et une plateforme dynamique pour les explorateurs littéraires de tous horizons.
+        </p>
+        <p class="description">
+            Notre mission est de vous emmener dans un voyage à travers les pages, où chaque virgule et chaque phrase résonnent avec émotion et signification. Que vous soyez un lecteur passionné depuis des années ou un nouvel amateur de livres, vous trouverez ici une abondance de trésors littéraires qui élargiront vos horizons et nourriront votre esprit.
+        </p>
+        <div class="livres">
+            <h2 class="titre">Liste de Lecture</h2>
+            <p class="description">
+                Plongez-vous dans notre collection soigneusement sélectionnée de livres captivants, où chaque titre promet une aventure littéraire unique. Notre liste de lecture est une célébration de la diversité de la littérature, offrant une gamme d'œuvres allant des classiques intemporels aux créations contemporaines.
+            </p>
+            <p class="description">
+                Avec des auteurs renommés et des talents émergents, notre liste de lecture est une invitation à l'exploration et à la découverte. Que vous soyez à la recherche d'un roman captivant, d'une œuvre philosophique inspirante ou d'une poésie émouvante, notre collection diversifiée vous offre un trésor de trésors littéraires à découvrir.
+            </p>
+            <div class="global-container">
+                <div class="container">
+                    <h1>le caimans noir</h1>
+                    <div class="image-container">
+                        <img src="image-sasset/téléchargement.jpeg" alt="img1">
+                    </div>
+                    <h2 class="title">Pierre Simone</h2>
+               </div>
+    
+               <div class="container">
+                <h1>Le dernier de l'empire</h1>
+                <div class="image-container">
+                    <img src="image-sasset/ouz semebene.jpeg" alt="img2">
+                </div>
+                <h2 class="title">Ousmane Sembene</h2>
+           </div>
+    
+           <div class="container">
+            <h1>Le ventre de l'Atlantique</h1>
+            <div class="image-container">
+                <img src="image-sasset/Fatou.jpeg" alt="img3">
+            </div>
+            <h2 class="title">Fatou Diome</h2>
+       </div>
+    
+       <div class="container">
+        <h1>Memoire</h1>
+        <div class="image-container">
+            <img src="image-sasset/abdou dioiuf.jpeg" alt="img4">
+        </div>
+        <h2 class="title">Abdou Diouf</h2>
+    </div>
+    
+    <div class="container">
+        <h1>Contes et Lavanes</h1>
+        <div class="image-container">
+            <img src="image-sasset/BIRAGO.webp" alt="img5">
+        </div>
+        <h2 class="title">Birago Diop</h2>
+    </div>
+    
+    <div class="container">
+            <h1>La solitude</h1>
+            <div class="image-container">
+                <img src="image-sasset/AMINA.jpg" alt="bb">
+            </div>
+            <h2 class="title">Aminata Ly Ndiaye</h2>
+       </div>
+                
+            </div>
+        </div>
+            </div>
+            
+        <dv class="bouton">
+            <button id="ajouter">ajouter un Livre</button>
+            <button id="supprimer">supprimer un Livre</button>
+            <button id="modifier">modifier un Livre</button>
+
+        </dv>
+        <div id="listeLivre" style="display: none;">
+            <select name="" >
+                <option>Contemplation</option>
+                <option>xala de ousmane sembene</option>
+                <option>la vie et la mors</option>
+                <option>solution de Ousmane Sonko</option>     
+            </select>
+            <button>supprimer</button>
+        </div>
+        
+          <div id="modalAjout" style="display: none;" >
+            <form action="">
+                <label for="auteur">quelle est le nom de l'auteur: </label>
+                <input id="auteur" type="text" placeholder="saisir le nom de l'auteur"> <br>
+                <label for="titre">quelle est le titre du livre: </label>
+                <input id="titre" type="text" placeholder="saisir le titre de l'auteur">
+                <button type="button">envoyer</button>
+            </form>
+          </div> 
+          
+          <div id="modalSup" style="display: none;">
+            <ul id="listeLivre"></ul>
+            
+          </div>
+
+          <div id="modalModif" style="display: none;">
+            <form action="">
+              <label for="auteurModif">Nouveau nom de l'auteur: </label>
+              <input id="auteurModif" type="text" placeholder="Saisir le nouveau nom de l'auteur"> <br>
+              <label for="titreModif">Nouveau titre du livre: </label>
+              <input id="titreModif" type="text" placeholder="Saisir le nouveau titre du livre">
+              <button type="button">Envoyer</button>
+            </form>
+          </div>
+          
+              
+    <script src="./index.js"></script>
+</body>
+<footer class="footer">
+    <section>
+        <h2 class="titre">Contactez nous</h2>
+        <p class="contact-icons">Vous Pouvez nous joindre sur les differents type de canal de communication: </p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter">Twitter</i></a>
+            <a href="#"><i class="fab fa-instagram">Instagram</i></a>
+            <a href="#"><i class="fab fa-youtube">Youtube</i></a>
+            <a href="#"><i class="fab fa-facebook">Facebook</i></a>
+            <p>sen lecture copyright &copy;2024 tous droits reservés</p>
+        </div>
+        
+    </section>
+</footer>
+
+</html>
